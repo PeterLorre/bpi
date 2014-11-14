@@ -180,6 +180,23 @@ SIDEBARS & ASIDES
 		}
 	}
 
+	.social-icons-sidebar{
+		margin-top: 1.5em;
+		ul{}
+		li{
+			float: left;
+			a{
+				padding: 1.1em .75em .5em;
+				background: #7B9BB9;
+				margin-left: 10px;
+			}
+			i{
+				color: $white;
+				font-size: 29px;
+			}
+		}
+	}
+
 
 	/* links widget */
 	.widget_links {}

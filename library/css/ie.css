@@ -410,6 +410,26 @@ SIDEBARS & ASIDES
   padding-left: 1em;
 }
 
+/* line 183, ../scss/breakpoints/_768up.scss */
+.social-icons-sidebar {
+  margin-top: 1.5em;
+}
+/* line 186, ../scss/breakpoints/_768up.scss */
+.social-icons-sidebar li {
+  float: left;
+}
+/* line 188, ../scss/breakpoints/_768up.scss */
+.social-icons-sidebar li a {
+  padding: 1.1em .75em .5em;
+  background: #7B9BB9;
+  margin-left: 10px;
+}
+/* line 193, ../scss/breakpoints/_768up.scss */
+.social-icons-sidebar li i {
+  color: white;
+  font-size: 29px;
+}
+
 /* links widget */
 /* meta widget */
 /* pages widget */
@@ -429,7 +449,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 283, ../scss/breakpoints/_768up.scss */
+/* line 300, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
