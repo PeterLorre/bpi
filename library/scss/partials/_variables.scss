@@ -30,15 +30,19 @@ $gray:              #eaedf2;
 $text-color:        #5c6b80;
 $meta-gray:         #9fa6b4;
 
+$light-brown:		#FFE98B;
+$med-brown:			#DBCC8B;
 $brown:             #ba5b15;
+$dark-brown:		#444332;
 
 $yellow:            #fcc942;
 
 $dark-blue:         #4e85c6;     
 $light-blue:		#a5b8e0;
 $blue:				#2980b9;
+$blue-content:      #E3E3E3;
 
-$link-color:        $white;
+$link-color:        $dark-brown;
 $link-hover:        darken($link-color, 9%);
 
 $border-color:      #ccc;

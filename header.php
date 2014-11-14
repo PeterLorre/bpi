@@ -45,16 +45,20 @@
 
 			<header class="header" role="banner">
 
-				<div id="inner-header" class="wrap cf">
+				<div id="inner-header" class="header-wrap cf">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<a class="logo" href="<?php echo home_url(); ?>" rel="nofollow"><?php echo bloginfo('name'); ?><img src="<?php echo get_template_directory_uri(); ?>/library/images/header-main.png" alt="<?php echo bloginfo('name'); ?>" /></a>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
-
-
-					<nav role="navigation">
+					
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-trigger="focus" data-target=".bs-navbar-collapse">
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					</button>
+					<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 						<?php wp_nav_menu(array(
     					'container' => false,                           // remove nav container
     					'container_class' => 'menu cf',                 // class of container (should you choose to use it)

@@ -26,19 +26,26 @@ LAYOUT & GRID STYLES
 .wrap {
 	width: 760px;
 }
+.header-wrap{
+	width: 100%;
+}
 
 /*********************
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+	background: $brown url(../images/header-bg.jpg) repeat-x;
+}
 
 	#logo {}
 
 /*********************
 NAVIGATION STYLES
 *********************/
-
+.top-nav{
+	display: block;
+}
 .nav {
 	border: 0;
 	ul {
@@ -57,7 +64,7 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				color: $white;
+				color: $light-brown;
 				text-decoration: underline;
 			}
 		}
@@ -146,8 +153,10 @@ SIDEBARS & ASIDES
 }
 
 	.widgettitle {
-		border-bottom: 2px solid #444;
+		text-transform: uppercase;
 		margin-bottom: 0.75em;
+		background: $white;
+		padding: .5em;
 	}
 
 	.widget {

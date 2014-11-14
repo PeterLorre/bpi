@@ -239,7 +239,7 @@ can replace these fonts, change it in your scss files
 and be up and running in seconds.
 */
 function bpi_fonts() {
-  wp_enqueue_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
+  wp_enqueue_style('googleFonts', 'http://fonts.googleapis.com/css?family=Oswald:400,700,300');
 }
 
 add_action('wp_enqueue_scripts ', 'bpi_fonts');
