@@ -48,7 +48,7 @@
 				<div id="inner-header" class="wrap cf">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+					<a class="logo" href="<?php echo home_url(); ?>" rel="nofollow"><?php echo bloginfo('name'); ?><img src="<?php echo get_template_directory_uri(); ?>/library/images/header-main.png" alt="<?php echo bloginfo('name'); ?>" /></a>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
