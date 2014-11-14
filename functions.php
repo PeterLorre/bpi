@@ -231,18 +231,17 @@ function bpi_comments( $comment, $args, $depth ) {
 } // don't remove this bracket!
 
 
-/*
-This is a modification of a function found in the
-twentythirteen theme where we can declare some
-external fonts. If you're using Google Fonts, you
-can replace these fonts, change it in your scss files
-and be up and running in seconds.
-*/
-function bpi_fonts() {
-  wp_enqueue_style('googleFonts', 'http://fonts.googleapis.com/css?family=Oswald:400,700,300');
+/* PHP working in widgets */
+add_filter('widget_text','rgps_execute_php',100);
+function rgps_execute_php($html){
+    if(strpos($html,"<"."?php")!==false){
+        ob_start();
+        eval("?".">".$html);
+        $html=ob_get_contents();
+        ob_end_clean();
+    }
+    return $html;
 }
-
-add_action('wp_enqueue_scripts ', 'bpi_fonts');
 
 
 
