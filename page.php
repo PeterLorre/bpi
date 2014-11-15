@@ -23,7 +23,7 @@
 								<section class="entry-content cf" itemprop="articleBody">
 									<?php
 										// Only show share bar before content on these pages:
-										if( is_page( array( 'undergraduate-courses', 'graduate-programs', 'psychic-readings', 'healings' ) ) ){
+										if( is_page( array( 'undergraduate-courses', 'graduate-programs', 'psychic-readings', 'healings', 'home' ) ) ){
 											get_template_part('library/includes/share-bar');
 										}
 										//main content
