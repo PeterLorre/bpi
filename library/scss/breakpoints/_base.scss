@@ -123,7 +123,7 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 96%;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -232,10 +232,17 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 nav .top-nav{
- 	background: $brown;
- 	li>a{
- 		color: $white;
- 		font-size: 14px;
+ 	// background: $brown;
+ 	background: #C56721;
+ 	li{
+ 		border-bottom: 1px solid darken($brown,7%);
+ 		&:last-child{
+ 			border: 0;
+ 		}
+ 		a{
+ 			color: $white;
+ 			font-size: 12px;
+ 		}
  	}
 }
 
@@ -243,8 +250,8 @@ nav .top-nav{
 	float: left;
 	margin: 0;
 	.icon-bar{
-		background: $white;
-		height: 3px;
+		background: $light-brown;
+		height: 2px;
 	}
 }
 .navbar-collapse{
@@ -907,12 +914,21 @@ SIDEBARS & ASIDES
 
 .sidebar {}
 
-	.widgettitle {}
+	.widgettitle {
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 0.75em;
+		background: $med-blue;
+		color: $white;
+		padding: .75em;
+		border-bottom: 3px solid $light-blue;
+	}
 
 	.widget {
-
+		padding: 0 10px;
+		margin: 2.2em 0;
 		ul {
-
+			padding: .5em;
 			li {
 
 				&:first-child {}
@@ -939,13 +955,34 @@ SIDEBARS & ASIDES
 		margin-bottom: 1.5em;
 	}
 
+	.social-icons-sidebar{
+		margin-top: 1.5em;
+		ul{
+			width: 255px;
+			margin: 0px auto;
+		}
+		li{
+			float: left;
+			a{
+				padding: 1.1em .75em .5em;
+				background: $white;
+				margin-left: 10px;
+			}
+			i{
+				color: #7A97B1;
+				font-size: 29px;
+			}
+		}
+	}
+
 /*********************
 FOOTER STYLES
 *********************/
 
 .footer {
 	clear: both;
-	background-color: $dark-brown;
+	height: 100px;
+	background: $black;
 	color: $light-gray;
 }
 

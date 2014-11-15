@@ -293,29 +293,58 @@ HEADER STYLES
   background: #ba5b15 url(../images/header-bg.jpg) repeat-x;
 }
 
+/* line 42, ../scss/breakpoints/_768up.scss */
+.logo img {
+  max-width: 760px;
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 49, ../scss/breakpoints/_768up.scss */
-nav .top-nav li > a:hover, nav .top-nav li > a:focus {
+/* line 50, ../scss/breakpoints/_768up.scss */
+nav .top-nav {
+  max-width: 760px;
+  margin: 0 auto;
+}
+/* line 53, ../scss/breakpoints/_768up.scss */
+nav .top-nav li {
+  border-right: 1px solid #B85D1A;
+  border-bottom: 0;
+}
+/* line 56, ../scss/breakpoints/_768up.scss */
+nav .top-nav li a {
+  font-size: 15px;
+  padding: .75em 1.65em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 60, ../scss/breakpoints/_768up.scss */
+nav .top-nav li a:hover, nav .top-nav li a:focus {
   color: #ffe98b;
   text-decoration: none;
-  text-shadow: #3F310B 1px 1px 5px;
+}
+/* line 67, ../scss/breakpoints/_768up.scss */
+nav .top-nav .current-menu-item.current_page_item a {
+  background: #9a4b11;
+}
+/* line 69, ../scss/breakpoints/_768up.scss */
+nav .top-nav .current-menu-item.current_page_item a:hover, nav .top-nav .current-menu-item.current_page_item a:focus {
+  background: #9a4b11;
 }
 
-/* line 56, ../scss/breakpoints/_768up.scss */
+/* line 75, ../scss/breakpoints/_768up.scss */
 .nav {
   border: 0;
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 58, ../scss/breakpoints/_768up.scss */
+/* line 77, ../scss/breakpoints/_768up.scss */
 .nav ul {
-  background: #323944;
+  background: #3e3e3e;
   margin-top: 0;
 }
-/* line 62, ../scss/breakpoints/_768up.scss */
+/* line 81, ../scss/breakpoints/_768up.scss */
 .nav li {
   float: left;
   position: relative;
@@ -324,7 +353,7 @@ nav .top-nav li > a:hover, nav .top-nav li > a:focus {
   */
   /* showing sub-menus */
 }
-/* line 66, ../scss/breakpoints/_768up.scss */
+/* line 85, ../scss/breakpoints/_768up.scss */
 .nav li a {
   border-bottom: 0;
   /*
@@ -332,12 +361,12 @@ nav .top-nav li > a:hover, nav .top-nav li > a:focus {
   has the possibility of being a mobile device.
   */
 }
-/* line 73, ../scss/breakpoints/_768up.scss */
+/* line 92, ../scss/breakpoints/_768up.scss */
 .nav li a:hover, .nav li a:focus {
   color: #ffe98b;
   text-decoration: underline;
 }
-/* line 86, ../scss/breakpoints/_768up.scss */
+/* line 105, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu,
 .nav li ul.children {
   margin-top: 0;
@@ -348,7 +377,7 @@ nav .top-nav li > a:hover, nav .top-nav li > a:focus {
   z-index: 8999;
   /* highlight sub-menu current page */
 }
-/* line 94, ../scss/breakpoints/_768up.scss */
+/* line 113, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li,
 .nav li ul.children li {
   /*
@@ -357,7 +386,7 @@ nav .top-nav li > a:hover, nav .top-nav li > a:focus {
   for usability. k, bai.
   */
 }
-/* line 96, ../scss/breakpoints/_768up.scss */
+/* line 115, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
   padding-left: 10px;
@@ -366,18 +395,18 @@ nav .top-nav li > a:hover, nav .top-nav li > a:focus {
   width: 180px;
   border-bottom: 1px solid #ccc;
 }
-/* line 113, ../scss/breakpoints/_768up.scss */
+/* line 132, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li:last-child a,
 .nav li ul.children li:last-child a {
   border-bottom: 0;
 }
-/* line 123, ../scss/breakpoints/_768up.scss */
+/* line 142, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li ul,
 .nav li ul.children li ul {
   top: 0;
   left: 100%;
 }
-/* line 138, ../scss/breakpoints/_768up.scss */
+/* line 157, ../scss/breakpoints/_768up.scss */
 .nav li:hover > ul {
   top: auto;
   visibility: visible;
@@ -387,53 +416,20 @@ nav .top-nav li > a:hover, nav .top-nav li > a:focus {
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 158, ../scss/breakpoints/_768up.scss */
-.sidebar {
-  margin-top: 2.2em;
-}
-
-/* line 162, ../scss/breakpoints/_768up.scss */
-.widgettitle {
-  text-transform: uppercase;
-  margin-bottom: 0.75em;
-  background: whitesmoke;
-  padding: .5em;
-}
-
-/* line 169, ../scss/breakpoints/_768up.scss */
+/* line 184, ../scss/breakpoints/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 174, ../scss/breakpoints/_768up.scss */
+/* line 189, ../scss/breakpoints/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 182, ../scss/breakpoints/_768up.scss */
+/* line 197, ../scss/breakpoints/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
-}
-
-/* line 190, ../scss/breakpoints/_768up.scss */
-.social-icons-sidebar {
-  margin-top: 1.5em;
-}
-/* line 193, ../scss/breakpoints/_768up.scss */
-.social-icons-sidebar li {
-  float: left;
-}
-/* line 195, ../scss/breakpoints/_768up.scss */
-.social-icons-sidebar li a {
-  padding: 1.1em .75em .5em;
-  background: whitesmoke;
-  margin-left: 10px;
-}
-/* line 200, ../scss/breakpoints/_768up.scss */
-.social-icons-sidebar li i {
-  color: #7A97B1;
-  font-size: 29px;
 }
 
 /* links widget */
@@ -447,6 +443,16 @@ SIDEBARS & ASIDES
 /* recent-comments widget */
 /* search widget */
 /* text widget */
+/* line 295, ../scss/breakpoints/_768up.scss */
+.social-icons-sidebar li a:hover, .social-icons-sidebar li a:focus {
+  border-bottom: 2px solid #a5b8e0;
+}
+/* line 299, ../scss/breakpoints/_768up.scss */
+.social-icons-sidebar li i {
+  color: #7A97B1;
+  font-size: 29px;
+}
+
 /*********************
 FOOTER STYLES
 *********************/
@@ -455,7 +461,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 307, ../scss/breakpoints/_768up.scss */
+/* line 318, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
@@ -478,6 +484,21 @@ be seen on the Desktop.
 /* line 12, ../scss/breakpoints/_1030up.scss */
 .wrap, .header-wrap {
   width: 960px;
+}
+
+/* line 17, ../scss/breakpoints/_1030up.scss */
+.logo img {
+  max-width: 960px;
+}
+
+/* line 22, ../scss/breakpoints/_1030up.scss */
+nav .top-nav {
+  margin: .75em 0;
+  max-width: 100%;
+}
+/* line 26, ../scss/breakpoints/_1030up.scss */
+nav .top-nav li a {
+  padding: .75em 3em;
 }
 
 /*

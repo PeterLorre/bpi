@@ -12,3 +12,19 @@ be seen on the Desktop.
 .wrap, .header-wrap {
   width: 960px;
 }
+
+.logo {
+	img{
+		max-width: 960px;
+	}
+}
+
+nav .top-nav{
+	margin: .75em 0;
+	max-width: 100%;
+	li{
+		a{
+			padding: .75em 3em;
+		}
+	}
+}
