@@ -27,6 +27,56 @@ body {
 ::-moz-selection { color: $dark-brown;  background: $light-blue; }
 ::selection      { color: $dark-brown;  background: $light-blue; } 
 
+//Social share bar
+.social-share-bar{
+  margin:0;
+  padding:0 !important;
+  li.total-shares {
+    padding: 3px 10px;
+    background: #0072bb;
+    color: $white;
+    line-height: 1;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    @include rounded(3px);
+    span.share-text {
+      font-size: 10px;
+      font-weight: 400;
+      display: inline-block;
+      margin: 0 0 0 4px;
+    }
+  }
+  li.googleplus {
+    width:60px;
+  }
+  #___plusone_1, #___plusone_2, .g-plusone {
+    width:60px !important;
+  }
+  #twitter-widget-0, #twitter-widget-1 {
+    width: 92px !important;
+  }
+}
+.social-share-bar li {
+  list-style:none;
+  display:inline-block;
+  margin-right:10px;
+  width:auto;
+  max-width:150px;
+  vertical-align: top;
+}
+.social-share-bar li img {
+  height:20px;
+  margin:0;
+}
+.social-share-bar .fa-envelope-o {
+	font-size: 22px;
+}
+.fb_iframe_widget span {
+  height:25px !important;
+}
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -112,6 +162,7 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	text-rendering: optimizelegibility;
 	font-weight: 500;
+	color: #7A97B1;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -285,7 +336,7 @@ POSTS & CONTENT STYLES
 }
 
 		.hentry {
-			// background-color: $white;
+			 background-color: $white;
 			// border-radius: 3px;
 			margin-bottom: 1.5em;
 			// border: 1px solid $border-color;

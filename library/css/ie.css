@@ -150,6 +150,10 @@ BOX SIZING
 /* @include box-sizing(border-box); */
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
+/*
+Border Radius
+USAGE: @include rounded(4px);
+*/
 /******************************************************************
 Site Name:
 Author:
@@ -390,7 +394,7 @@ SIDEBARS & ASIDES
 .widgettitle {
   text-transform: uppercase;
   margin-bottom: 0.75em;
-  background: white;
+  background: whitesmoke;
   padding: .5em;
 }
 
@@ -421,12 +425,12 @@ SIDEBARS & ASIDES
 /* line 188, ../scss/breakpoints/_768up.scss */
 .social-icons-sidebar li a {
   padding: 1.1em .75em .5em;
-  background: #7B9BB9;
+  background: whitesmoke;
   margin-left: 10px;
 }
 /* line 193, ../scss/breakpoints/_768up.scss */
 .social-icons-sidebar li i {
-  color: white;
+  color: #7A97B1;
   font-size: 29px;
 }
 

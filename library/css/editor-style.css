@@ -347,6 +347,10 @@ body#tinymce.wp-editor {
   /* @include box-sizing(border-box); */
   /* NOTE: value of "padding-box" is only supported in Gecko. So
   probably best not to use it. I mean, were you going to anyway? */
+  /*
+  Border Radius
+  USAGE: @include rounded(4px);
+  */
   width: 731px;
   font-family: Droid Sans;
   font-size: 100%;
