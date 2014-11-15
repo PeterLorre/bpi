@@ -231,9 +231,12 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
-.top-nav{
-	// display: none;
+nav .top-nav{
  	background: $brown;
+ 	li>a{
+ 		color: $white;
+ 		font-size: 14px;
+ 	}
 }
 
 .navbar-toggle{

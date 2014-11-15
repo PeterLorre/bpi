@@ -43,8 +43,15 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
-.top-nav{
-	display: block;
+nav .top-nav{
+	li>a{
+
+		&:hover, &:focus{
+			color: $light-brown;
+			text-decoration: none;
+			text-shadow: #3F310B 1px 1px 5px;
+		}
+	}
 }
 .nav {
 	border: 0;
